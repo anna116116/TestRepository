@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+skinparam actorStyle awesome
+
+package アクター{
+  :生徒: as s
+  :教員: as t
+}
+
+package elCampus{
+  (課題提出)
+  (お知らせ掲載)
+  (試験)
+  (アンケート)
+}
+
+package UNIVERSAL_PASSPORT{
+  (シラバス参照)
+  (履修登録)
+  (成績確認)
+}
+
+s --> 課題提出
+s --> 試験
+s --> アンケート
+s --> シラバス参照
+s --> 履修登録
+s --> 成績確認
+
+t --> お知らせ掲載
+t --> 成績確認
+
+@enduml

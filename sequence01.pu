@@ -1,0 +1,6 @@
+@startuml
+Client -> Server: データを要求
+Server -> Database: 結果を取得
+
+Server -> Client: データを返す
+@enduml

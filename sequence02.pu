@@ -1,0 +1,6 @@
+@startuml
+Main_Function -> calculate: データ計算のため呼出し
+calculate -> getInput: 結果取得のため呼出し
+getInput -> calculate: 入力データを返す
+calculate -> Main_Function: 計算結果を返す
+@enduml
